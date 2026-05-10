@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Login | CODE WITH SOUMYA</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+<style>
+    /* Premium Glass Popup Styling */
+    .glass-popup {
+        background: rgba(255, 255, 255, 0.05) !important;
+        backdrop-filter: blur(15px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 20px !important;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8) !important;
+    }
+</style>
+</head>
+<body>
+    <div class="glass-form">
+        <h2>Login</h2>
+        <form action="login_process.php" method="POST">
+            <input type="email" name="email" placeholder="Email ID" required>
+            <input type="password" name="password" placeholder="Password" required>
+            
+            <div style="text-align: right; margin-bottom: 15px;">
+                <a href="forgot_password.html" style="color: #38bdf8; font-size: 13px; text-decoration: none;">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="cta-btn">Login</button>
+        </form>
+        <p style="margin-top: 15px;">New user? <a href="register.html" style="color: #38bdf8;">Register here</a></p>
+    </div>
+</body>
+</html>
